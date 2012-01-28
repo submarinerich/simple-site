@@ -1,0 +1,13 @@
+## Submarine Rich STorrent ##
+
+---
+
+### Setup ###
+
+	--Requires--
+
+	npm install -g jade
+	npm install -g stylus
+	sudo port install multimarkdown
+
+	rake run
