@@ -1,10 +1,9 @@
-## Submarine Rich STorrent ##
+## Submarine Rich simple-site ##
 
 ---
 
 ### Setup ###
 
-	--Requires--
 
 	npm install -g jade
 	npm install -g stylus
