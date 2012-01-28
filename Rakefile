@@ -8,8 +8,7 @@ task :clean do
 end
 
 desc "compile the jade and stylus into a site"
-task :build do
-  Rake::Task['clean'].invoke
+task :build => :clean do
   sh "jade *.jade"
   sh "stylus *.styl"
   Dir.entries('./') do | entry |
@@ -21,3 +20,10 @@ task :build do
   sh "mv *.html site/"
   sh "mv *.css site/"
 end
+
+
+desc "clean, compile, open in a browser"
+task :run => :build do
+  sh "open site/index.html"
+end
+
